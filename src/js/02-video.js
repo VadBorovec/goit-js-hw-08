@@ -1,4 +1,5 @@
 import Player from '@vimeo/player';
+import throttle from 'lodash.throttle';
 
 const TIME_KEY = 'videoplayer-current-time';
 const iframe = document.querySelector('#vimeo-player');
@@ -9,7 +10,7 @@ function getTime({ seconds }) {
   localStorage.setItem(TIME_KEY, seconds);
 }
 
-player.on('timeupdate', getTime);
+player.on('timeupdate', throttle(getTime, 1000));
 
 //* Resume playback from saved position on page reload
 player.setCurrentTime(parseFloat(localStorage.getItem(TIME_KEY)) || 0);

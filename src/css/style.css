@@ -27,26 +27,21 @@ ul {
 
 /* STYLES FOR BUTTON  */
 button {
-    margin: 4px;
-    padding: 8px 12px;
-    font-size: 16px;
+    margin: 0.25rem;
+    /* padding: 8px 12px; */
+    font-size: 1rem;
     font-family: inherit;
     cursor: pointer;
 }
 /* ----------------------------------------------------------- */
 /* STYLES FOR BACK BTN */
 .back-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    padding: 12px 24px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: #fff;
     background-color: #f68768;
     box-shadow: 0 2px 5px rgba(211, 37, 37, 0.7);
@@ -65,13 +60,16 @@ button {
 }
 
 .back-btn__link {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1.5rem;
     text-decoration: inherit;
     color: inherit;
 }
 
 .back-btn .icon {
-    width: 25px;
-    height: 25px;
+    width: 1.5rem;
+    height: 1.5rem;
     fill: inherit;
 }
 
@@ -88,14 +86,14 @@ button {
     text-align: center;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
 }
 
 .page-header::after {
     content: '';
     display: block;
     width: 100%;
-    height: 3px;
+    height: 0.2rem;
     background-color: #5f5f5f;
     margin-top: 1.5rem;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -157,7 +155,7 @@ button {
     content: '';
     display: block;
     width: 100%;
-    height: 3px;
+    height: 0.2rem;
     background-color: #5f5f5f;
     margin-bottom: 3rem;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);

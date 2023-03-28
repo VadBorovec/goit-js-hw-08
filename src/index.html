@@ -7,17 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homework 8</title>
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <ul>
-    <li><a href="01-gallery.html">Image gallery</a></li>
-    <li><a href="02-video.html">Video playback</a></li>
-    <li><a href="03-feedback.html">Feedback form</a></li>
-  </ul>
 
-  <!-- javascript -->
-  <!-- <script type="module" src="./js/01-gallery.js"></script> -->
+  <!-- HEADER -->
+  <include src="./partials/header.html"></include>
+
+  <!-- MAIN -->
+  <main>
+    <section class="content">
+      <h2 class="content__header">Content</h2>
+      <ul class="content__list">
+        <li class="content__item"><a href="./01-gallery.html" class="content__link">Image gallery</a></li>
+        <li class="content__item"><a href="./02-video.html" class="content__link">Video playback</a></li>
+        <li class="content__item"><a href="./03-feedback.html" class="content__link">Feedback form</a></li>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <include src="./partials/footer.html"></include>
+
+  <!-- js -->
+  <!-- <script src="js/11-background-color.js" type="module"></script> -->
+  <!-- <script src="js/12-scroll-to-top.js" type="module"></script> -->
 </body>
 
 </html>

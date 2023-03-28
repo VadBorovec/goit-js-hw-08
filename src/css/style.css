@@ -100,7 +100,16 @@ button {
 }
 
 /* ----------------------------------------------------------- */
-/* STYLES FOR PARTIALS */
+/* STYLES FOR MAIN */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------------------------------------------------------- */
+/* STYLES FOR CONTENT */
 
 .content {
     padding: 1.6rem;

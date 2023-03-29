@@ -33,6 +33,12 @@ button {
     font-family: inherit;
     cursor: pointer;
 }
+
+/* STYLES FOR HIDDEN  */
+.hidden {
+    display: none;
+}
+
 /* ----------------------------------------------------------- */
 /* STYLES FOR BACK BTN */
 .back-btn {

@@ -20,7 +20,7 @@
   cursor: pointer;
 }
 
-input,
+.feedback-form input,
 textarea {
   padding: 8px;
   font: inherit;

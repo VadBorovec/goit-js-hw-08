@@ -1,15 +1,8 @@
-// Add imports above this line
 import { galleryItems } from './gallery-items';
-// Change code below this line
-
-console.log(galleryItems);
-
-// Описаний в документації
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-//* Створення і рендер розмітки на підставі масиву даних galleryItems і наданого шаблону елемента галереї.
+// * Створює і рендер розмітки на підставі масиву даних galleryItems і наданого шаблону елемента галереї.
 const galleryList = document.querySelector('ul.gallery');
 
 const makeGalleryItemMarkup = ({
@@ -35,7 +28,7 @@ const GallaryMarkup = galleryItems.map(makeGalleryItemMarkup).join('');
 
 galleryList.insertAdjacentHTML('beforeend', GallaryMarkup);
 
-//* Застосування SimpleLightbox
+// * Застосовує SimpleLightbox
 new SimpleLightbox('ul.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,

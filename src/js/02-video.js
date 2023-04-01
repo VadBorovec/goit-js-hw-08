@@ -5,12 +5,12 @@ const TIME_KEY = 'videoplayer-current-time';
 const iframe = document.querySelector('#vimeo-player');
 const player = new Player(iframe);
 
-//* Save playback time to local storage on timeupdate event
+// * Зберігає час відтворення до localStorage під час події 'timeupdate'
 function getTime({ seconds }) {
   localStorage.setItem(TIME_KEY, seconds);
 }
 
 player.on('timeupdate', throttle(getTime, 1000));
 
-//* Resume playback from saved position on page reload
+// * Відновлює відтворення зі збереженої позиції при перезавантаженні сторінки
 player.setCurrentTime(parseFloat(localStorage.getItem(TIME_KEY)) || 0);

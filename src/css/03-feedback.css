@@ -26,6 +26,13 @@ textarea {
   font: inherit;
 }
 
+.feedback-form input:focus,
+textarea:focus {
+  border: 5px solid #f68768;
+  border-radius: 4px;
+  outline: none;
+}
+
 textarea {
   resize: none;
 }
